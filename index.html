@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CocoaClaus - Luxury Christmas Chocolates. Handcrafted for the holiday season.">
+    <title>CocoaClaus | Luxury Christmas Chocolates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">CocoaClaus 🍫</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Collection</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <span class="icon">🌙</span>
+        </button>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="snow-container" id="snow-container"></div>
+        <div class="hero-content">
+            <h1>Taste the Magic of <br> <span class="highlight">Christmas Night</span></h1>
+            <p>Handcrafted Belgian chocolate infused with the spirit of the holidays. Limited Reindeer Edition available
+                now.</p>
+            <a href="#products" class="cta-button primary-cta">Shop the Collection</a>
+        </div>
+    </section>
+
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title">The North Pole Collection</h2>
+            <p class="section-subtitle">Exquisite flavors crafted by our master chocolatiers.</p>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="card-image">
+                        <img src="images/santa.jpg" alt="Box of dark chocolate truffles">
+                        <span class="badge">Bestseller</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Santa's Truffles</h3>
+                        <p>70% Dark Chocolate with Peppermint Ganache.</p>
+                        <div class="price-action">
+                            <span class="price">$24.99</span>
+                            <button class="add-cart">Add to Sleigh</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="card-image">
+                        <img src="images/reindeer.jpg" alt="White chocolate bark with cranberries">
+                    </div>
+                    <div class="card-info">
+                        <h3>Rudolph's Bark</h3>
+                        <p>White Chocolate with Cranberries & Pistachios.</p>
+                        <div class="price-action">
+                            <span class="price">$18.50</span>
+                            <button class="add-cart">Add to Sleigh</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="card-image">
+                        <img src="images/elf.jpg" alt="Milk chocolate pralines">
+                    </div>
+                    <div class="card-info">
+                        <h3>Elf Bites</h3>
+                        <p>Milk Chocolate Hazelnut Pralines.</p>
+                        <div class="price-action">
+                            <span class="price">$15.00</span>
+                            <button class="add-cart">Add to Sleigh</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Joy From Our Customers</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                    <p>"The packaging is stunning and the truffle taste is divine. The perfect gift for my family."</p>
+                    <cite>- Sarah Jenkins</cite>
+                </div>
+                <div class="review-card">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                    <p>"I've never tasted white chocolate this good. Rudolph's Bark is a game changer!"</p>
+                    <cite>- Mike Ross</cite>
+                </div>
+                <div class="review-card">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                    <p>"Fast shipping and the chocolates didn't melt. Highly recommended for the holidays."</p>
+                    <cite>- Emily Blunt</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact-wrapper">
+            <div class="contact-text">
+                <h2>Visit the Workshop</h2>
+                <p>Have a custom order for a corporate event? Reach out to our elves.</p>
+                <ul class="contact-details">
+                    <li>📍 123 Candy Cane Lane, North Pole</li>
+                    <li>📧 orders@cocoaclaus.com</li>
+                    <li>📞 +234 808 560 4124</li>
+                </ul>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent to the North Pole!');">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Tell us your chocolate wishes..." required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CocoaClaus. Made by Idowu Femi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
